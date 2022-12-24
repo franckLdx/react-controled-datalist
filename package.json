@@ -1,0 +1,9 @@
+{
+  "name": "react-controled-datalist",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/franckLdx/react-controled-datalist.git",
+  "author": "<franck.ledoux.pro@gmail.com>",
+  "license": "MIT",
+  "description": "You give to the datalist it's content so that you control what is displayed using your own logic"
+}
