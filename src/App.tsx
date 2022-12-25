@@ -1,13 +1,6 @@
 import React, { FC } from "react"
-import { DataList } from "./DataList";
-import { DataListOption } from "./DataListOption";
+import { Example1 } from "./Example1";
 
 export const App: FC = () => (
-  <>
-    <input placeholder="type something" />
-    <DataList isOpen >
-      <DataListOption>Vaux le vicompte</DataListOption>
-      <DataListOption>Chambord</DataListOption>
-    </DataList>
-  </>
+  <Example1 />
 )

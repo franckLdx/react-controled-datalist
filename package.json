@@ -8,11 +8,13 @@
   "description": "You give to the datalist it's content so that you control what is displayed using your own logic",
   "devDependencies": {
     "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-react": "^3.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sass": "^1.57.1",
     "typescript": "^4.9.4",
-    "vite": "^4.0.3"
+    "vite": "^4.0.3",
+    "vite-plugin-sass-dts": "^1.2.9"
   },
   "scripts": {
     "dev": "vite",

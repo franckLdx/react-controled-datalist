@@ -1,10 +1,20 @@
-import React, { FC, ReactNode } from 'react'
+import React, { FC, MouseEventHandler, ReactNode } from 'react'
 
-import style from './dataListOption.module.scss'
+import styles from './dataListOption.module.scss'
 
-interface DataLOptionProps {
+export type OnSelectHandler = () => void
+
+export interface DataLOptionProps {
+  onSelect: OnSelectHandler
   children?: ReactNode
 }
 
-export const DataListOption: FC<DataLOptionProps> = ({ children }) => (<option
-  className={style.dataListOption}>{children}</option>)
+export const DataListOption: FC<DataLOptionProps> = ({ onSelect, children }) => {
+  const onClick: MouseEventHandler<HTMLDivElement> = () => onSelect()
+
+  return (
+    <div className={styles.dataListOption} onClick={onClick}>
+      {children}
+    </div>
+  )
+}
