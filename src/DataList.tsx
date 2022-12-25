@@ -9,11 +9,12 @@ interface DataListProps {
 }
 
 export const DataList: FC<DataListProps> = ({ className, isOpen, children }) => {
+  const foo = () => { debugger }
   if (!isOpen) {
     return null
   }
   return (
-    <div className={`${styles.dataList} ${className}`}>
+    <div id="dataList" className={`${styles.dataList} ${className}`} onClick={foo}>
       {children}
     </div>
   )

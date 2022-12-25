@@ -13,7 +13,7 @@ export const DataListOption: FC<DataLOptionProps> = ({ onSelect, children }) => 
   const onClick: MouseEventHandler<HTMLDivElement> = () => onSelect()
 
   return (
-    <div className={styles.dataListOption} onClick={onClick}>
+    <div id="dataListOptiion" className={styles.dataListOption} >
       {children}
     </div>
   )
